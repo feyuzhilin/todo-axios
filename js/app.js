@@ -68,6 +68,9 @@
 					this.getTodoList()
 					this.clickId = -1
 				})
+			},
+			clearTodo(){
+				this.list.filter(item=>item.completed).forEach(item=>this.delTodo(item.id))
 			}
 		},
 		computed: {
